@@ -16,7 +16,6 @@ l = []
 
 for a in soup.find_all('b'):
     l.append(re.sub(r"[<b>,</b>]", "", str(a)))
-    
 
 kod = l[1]
 ad = l[3]
