@@ -1,8 +1,7 @@
-# -*- coding: cp1254 -*-
 import urllib.request
 import json
 from bs4 import BeautifulSoup
-import string
+
 ab_kodu = input("Abonent kodunuz: ")
 api_url = "http://data.e-gov.az/api/v1/IEGOVService.svc/GetDebtByAbonentCode/{}".format(ab_kodu)
 
@@ -17,9 +16,9 @@ l = []
 for a in soup.find_all('b'):
     l.append(a)
 b = str(a)
-b.replace("<b>", "a")
+b.replace("<b>", "")
 
 kod = l[1]
 ad = l[3]
 borc = l[5]
-print("Abonentin kodu: {}\nAdý: {}\nBorc: {}".format(kod,ad,borc))
+print("Abonentin kodu: {}\nAdi: {}\nBorc: {}".format(kod,ad,borc))
