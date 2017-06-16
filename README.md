@@ -1,1 +1,1 @@
-A simple script that gives to you input, if you input your subscriber code it prints your name and debt for water. Also keep in mind that this works for just Azerbaijani nation.
+A simple script that gives to you input, if you input your subscriber code it prints your name and debt for water. Script is parsing data from https://www.e-gov.az API. Also keep in mind that this works for just Azerbaijani nation.
