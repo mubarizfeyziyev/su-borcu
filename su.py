@@ -15,7 +15,7 @@ soup = BeautifulSoup(html, "html.parser")
 l = []
 
 for a in soup.find_all('b'):
-    l.append(re.sub(r"[<b>,</b>]", "", str(a)))
+    l.append(re.sub(r"[</?b>]", "", str(a)))
 
 kod = l[1]
 ad = l[3]
